@@ -1,0 +1,285 @@
+body {
+    font-family: 'Anton', sans-serif;
+    background-color: #F0F0F0;
+}
+
+.navbar.bg-light {
+    background-color: #F0F0F0 !important; /* Use !important to override Bootstrap styles if necessary */
+}
+
+#circleOne {
+    width: 105px;
+    height: 105px;
+    background-color: #E6563B;
+    border-radius: 50%;
+    border: #ffffff 8px solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F0F0F0;
+
+}
+
+#circleTwo {
+    width: 105px;
+    height: 105px;
+    background-color: #EB9D3A;
+    border-radius: 50%;
+    border: #ffffff 8px solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F0F0F0;
+}
+
+#circleThree {
+    width: 105px;
+    height: 105px;
+    background-color: #7CB06C;
+    border-radius: 50%;
+    border: #ffffff 8px solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F0F0F0;
+}
+
+#circleFour {
+    width: 105px;
+    height: 105px;
+    background-color: #27ABA9;
+    border-radius: 50%;
+    border: #ffffff 8px solid;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #F0F0F0;
+}
+
+#ipad {
+    border: 10px #E6E6E6 solid !important;
+    padding: 0;
+}
+
+#man {
+    border: 10px #E6E6E6 solid !important;
+    padding: 0;
+}
+
+#macbook {
+    border: 10px #E6E6E6 solid !important;
+    padding: 0;
+}
+
+#security {
+    border: 10px #E6E6E6 solid !important;
+    padding: 0;
+}
+
+.iconOne {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #E6563B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.iconTwo {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #EB9D3A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.iconThree {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #7CB06C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.iconFour {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #27ABA9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: small;
+}
+
+.headline {
+    text-align: center;
+}
+
+/*.circles{*/
+/*    padding: 40px;*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    flex-wrap: wrap;*/
+/*}*/
+
+
+/*screen sizes 576 and up*/
+@media (max-width: 576px) {
+    .circles {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 300px;
+        margin: auto;
+
+    }
+
+    #circleOne {
+        margin: 15px;
+
+    }
+
+    #circleTwo {
+        margin: 15px;
+
+    }
+
+    #circleThree {
+        margin: 15px;
+    }
+
+    #circleFour {
+        margin: 15px;
+    }
+
+    .iconContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .iconContainer h2 {
+        margin-right: auto;
+    }
+
+
+    .iconOne, .iconTwo, .iconThree, .iconFour {
+        margin-left: 1%;
+    }
+
+}
+
+
+@media (min-width: 576px) {
+    .circles {
+        position: relative;
+        display: flex;
+        justify-content: space-evenly;
+        width: 600px;
+        margin: auto;
+    }
+
+
+    @media (max-width: 768px) {
+        .iconContainer {
+            display: flex;
+            align-items: center;
+        }
+
+        .iconContainer h2 {
+            margin-right: auto;
+        }
+
+
+        .iconOne, .iconTwo, .iconThree, .iconFour {
+            margin-left: 1%;
+        }
+
+    }
+
+
+}
+
+/*For screens over 992px*/
+@media (min-width: 992px) {
+    .navbar-text {
+        display: none;
+    }
+
+    .iconContainer {
+        display: flex;
+        align-items: center;
+    }
+
+    .iconContainer h2 {
+        margin-right: auto;
+    }
+
+    .iconOne, .iconTwo, .iconThree, .iconFour {
+        margin-left: 1%;
+    }
+
+
+}
+
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 100%; /* Maintain a 1:1 aspect ratio */
+}
+
+.image-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+@media (max-width: 1200px) and (min-width: 768px) {
+    .col-lg-6.col-xl-3.col-md-6.col-sm-12 {
+        flex: 0 0 50%; /* Make the columns 2x2 on screens between 768px and 1200px */
+        max-width: 50%;
+    }
+}
+
+.positionOne {
+    position: absolute;
+    right: -52%;
+    top: 65%;
+}
+
+.positionTwo {
+    position: absolute;
+    right: -52%;
+    top: 91%;
+
+}
+
+.positionThree {
+    position: absolute;
+    right: -52%;
+    top: 117%;
+}
+
+.positionFour {
+    position: absolute;
+    right: 16%;
+    top: 137%;
+    width: 600px;
+}
