@@ -255,6 +255,19 @@ body {
     .col-lg-6.col-xl-3.col-md-6.col-sm-12 {
         flex: 0 0 50%; /* Make the columns 2x2 on screens between 768px and 1200px */
         max-width: 50%;
+
+        .iconContainer {
+            display: flex;
+            align-items: center;
+        }
+
+        .iconContainer h2 {
+            margin-right: auto;
+        }
+
+        .iconOne, .iconTwo, .iconThree, .iconFour {
+            margin-left: 1%;
+        }
     }
 }
 
@@ -278,8 +291,6 @@ body {
 }
 
 .positionFour {
-    position: absolute;
-    right: 16%;
-    top: 137%;
+    position: relative;
     width: 600px;
 }
